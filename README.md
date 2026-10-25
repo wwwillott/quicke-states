@@ -13,17 +13,20 @@ The compiler is deliberately explicit about equivalence:
 
 ## Installation
 
-From the public source repository:
+```bash
+pip install quicke-states
+```
+
+For Willow hardware support:
+
+```bash
+pip install "quicke-states[willow]"
+```
+
+To install from the source repository instead:
 
 ```bash
 pip install "git+https://github.com/wwwillott/quicke-states.git"
-```
-
-PyPI publishing is the next step. After that, the same package will also
-install as:
-
-```bash
-pip install quicke-states
 ```
 
 For a source checkout, Willow support and development tools are optional:
