@@ -13,6 +13,15 @@ The compiler is deliberately explicit about equivalence:
 
 ## Installation
 
+From the public source repository:
+
+```bash
+pip install "git+https://github.com/wwwillott/quicke-states.git"
+```
+
+PyPI publishing is the next step. After that, the same package will also
+install as:
+
 ```bash
 pip install quicke-states
 ```
@@ -137,7 +146,7 @@ result = compile_dicke(6, 3, hardware=willow_target())
 ## Command line
 
 ```bash
-dicke-compile 6 3 --objective depth --print-circuit
+quicke-states 6 3 --objective depth --print-circuit
 ```
 
 ## Guarantees and current limits
@@ -159,8 +168,8 @@ The line synthesis is based on:
 > A. Bärtschi and S. Eidenbenz, “Deterministic Preparation of Dicke States,”
 > arXiv:1904.07358 (2019).
 
-Additional papers and hardware references are catalogued in
-[`research/README.md`](research/README.md).
+The default line constructions follow that paper's split-and-cyclic-shift
+structure, then apply unitary-safe compression and hardware placement.
 
 ## Development
 

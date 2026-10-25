@@ -10,6 +10,7 @@ readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
 authors = [{ name = "DuQuantum" }]
+urls = { Homepage = "https://github.com/wwwillott/quicke-states", Repository = "https://github.com/wwwillott/quicke-states", Issues = "https://github.com/wwwillott/quicke-states/issues" }
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Science/Research",

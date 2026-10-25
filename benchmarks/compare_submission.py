@@ -13,6 +13,11 @@ from dicke_compiler.verification import state_preparation_fidelity
 
 def _load_incumbent():
     submission_path = Path(__file__).resolve().parents[1] / "dicke_submission.py"
+    if not submission_path.exists():
+        raise FileNotFoundError(
+            "optional incumbent comparison requires dicke_submission.py "
+            "from the original competition repository"
+        )
     spec = importlib.util.spec_from_file_location(
         "dicke_submission_benchmark",
         submission_path,
